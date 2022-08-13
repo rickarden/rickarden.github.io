@@ -1,0 +1,34 @@
+<div class="app-shoppinglist">
+  <p>Inköpslista</p>
+
+  <div class="shopping-list">
+    <form [formGroup]="itemForm">
+      <div class="inputdiv">
+        <input #nameField id="name" name="name" type="text" placeholder="Namn" formControlName="name"/>
+      </div>
+      <div class="inputdiv">
+        <ngbd-typeahead-focus #ngbdTypeaheadFocus id="category" name="category" formControlName="category"></ngbd-typeahead-focus>
+        <!-- <input id="category" name="category" type="text" placeholder="Kategori" formControlName="category"/> -->
+      </div>
+      <div class="inputdiv">
+        <input id="amount" name="amount" type="text" placeholder="Antal (default: 1)" formControlName="amount"/>
+      </div>
+      <p></p>
+      <div class="ny-vara">
+        <button (click)="nyVara()" [disabled]="newDisabled">Ny vara</button>
+      </div>
+    </form>
+    <div *ngIf="items && items.length > 0" class="listan">Inköpslista {{ now }}
+      <p></p>
+      <div *ngFor="let item of items">
+        <div><span class="amount-name">{{ item.amount }} {{ item.name }}</span> <span class="category">{{ item.category }}</span> <a class="removeButton" (click)="removeItem(item.id)">Bort</a></div>
+      </div>
+      <div class="spara-lista">
+        <button class="spara-lista-knapp" (click)="sorteraLista()">Sortera lista</button>
+        <button class="spara-lista-knapp" (click)="sparaLista()">Spara lista</button>
+        <input id="list-namn" name="list-namn" type="text" placeholder="Namn på listan"/>
+        <button class="spara-lista-knapp" (click)="shoppa()">Handla!</button>
+      </div>
+    </div>
+  </div>
+</div>

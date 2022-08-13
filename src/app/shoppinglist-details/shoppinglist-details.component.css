@@ -1,0 +1,34 @@
+.amount-name{
+  display: inline-block;
+  width: 200px;
+}
+
+.category{
+  font-size: small;
+  font-style: italic;
+}
+
+.TFtable{
+  width: 95%;
+  border-collapse: collapse;
+}
+.TFtable td{
+  padding:7px;
+}
+/* provide some minimal visual accomodation for IE8 and below */
+.TFtable tr{
+  background: #b8d1f3;
+  transition: background-color 1s;
+}
+/*  Define the background color for all the ODD background rows  */
+.TFtable tr:nth-child(odd){
+  background: #b8d1f3;
+}
+/*  Define the background color for all the EVEN background rows  */
+.TFtable tr:nth-child(even){
+  background: #dae5f4;
+}
+
+.TFtable tr.itemCrossOff{
+  background: #a6ed9d
+}

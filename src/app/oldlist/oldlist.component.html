@@ -1,0 +1,7 @@
+<div *ngFor="let item of shoppinglist">
+  <div><span class="amount-name">{{ item.amount }} {{ item.name }}</span> <span class="category">{{ item.category }}</span></div>
+</div>
+
+<div class="klona-lista">
+  <button class="klona-lista-knapp" (click)="klonaLista()">Klona lista</button>
+</div>

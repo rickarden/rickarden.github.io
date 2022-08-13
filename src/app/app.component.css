@@ -1,0 +1,13 @@
+.navigation {
+  position: relative;
+  left: 10px;
+}
+
+.main-outlet{
+  /*background-color: whitesmoke;*/
+}
+
+.header{
+  font-size: large;
+  color: gray;
+}

@@ -1,0 +1,55 @@
+.form-control { width: 300px; }
+
+.app-shoppinglist {
+  display: inline-block;
+  position: relative;
+  left: 10px;
+  width: 97%;
+  background-color: whitesmoke;
+}
+
+.shopping-list{
+  display: flex;
+}
+
+.inputdiv{
+  padding: 4px;;
+}
+
+.listan{
+  position:relative;
+  float: right;
+  left: 100px;
+}
+
+.amount-name{
+  display: inline-block;
+  width: 200px;
+}
+
+.category{
+  font-size: small;
+  font-style: italic;
+
+  display: inline-block;
+  width: 200px;
+}
+
+.spara-lista{
+  position: relative;
+
+
+}
+
+.spara-lista-knapp {
+  margin: 2px;
+}
+
+.removeButton{
+  color:#0d6efd;
+}
+
+.removeButton:hover{
+  color: blue;
+  cursor: pointer;
+}

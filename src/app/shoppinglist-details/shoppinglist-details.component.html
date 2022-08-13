@@ -1,0 +1,8 @@
+<div>
+  <table class="TFtable">
+    <tr [ngClass]="{'itemCrossOff': clickedItems.indexOf(item.id) > -1}" (click)="onRowClicked(item.id)" *ngFor="let item of items">
+      <td class="amount-name">{{ item.amount }} {{ item.name }}</td> <td class="category">{{ item.category }}</td>
+    </tr>
+  </table>
+
+</div>

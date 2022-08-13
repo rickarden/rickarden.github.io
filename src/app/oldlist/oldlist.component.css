@@ -1,0 +1,15 @@
+.amount-name{
+  display: inline-block;
+  width: 200px;
+}
+
+.category{
+  position: relative;
+  left: 30px;
+  font-size: small;
+  font-style: italic;
+}
+
+.klona-lista{
+  margin-left: 8px;
+}
