@@ -23,7 +23,7 @@ export class MainComponent implements OnInit {
       console.log("printing list " + i + " keyName " + keyName);
       let listLS = localStorage.getItem(keyName);
 
-      console.log(listLS);
+      //console.log(listLS);
       let listObj = {
         index: i,
         name: keyName,

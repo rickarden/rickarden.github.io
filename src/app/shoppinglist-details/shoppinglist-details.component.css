@@ -1,11 +1,12 @@
 .amount-name{
   display: inline-block;
-  width: 200px;
+  width: 100%;
 }
 
 .category{
   font-size: small;
   font-style: italic;
+  width: 30%;
 }
 
 .TFtable{
@@ -19,6 +20,9 @@
 .TFtable tr{
   background: #b8d1f3;
   transition: background-color 1s;
+}
+.TFtable tr:hover{
+  cursor: pointer;
 }
 /*  Define the background color for all the ODD background rows  */
 .TFtable tr:nth-child(odd){

@@ -4,22 +4,29 @@
   display: inline-block;
   position: relative;
   left: 10px;
-  width: 97%;
+  width: 476px;
   background-color: whitesmoke;
 }
 
 .shopping-list{
-  display: flex;
+  display: inline-block;
 }
 
 .inputdiv{
   padding: 4px;;
 }
 
+.ny-vara{
+  padding: 4px;
+}
+
+.hr-list{
+  position: relative;
+  left:4px;
+}
+
 .listan{
-  position:relative;
-  float: right;
-  left: 100px;
+  padding: 4px;
 }
 
 .amount-name{
@@ -37,12 +44,15 @@
 
 .spara-lista{
   position: relative;
-
-
 }
 
 .spara-lista-knapp {
   margin: 2px;
+  min-width: 70px;
+}
+
+.spara-lista-knapp:hover {
+  background-color: antiquewhite;
 }
 
 .removeButton{
@@ -52,4 +62,17 @@
 .removeButton:hover{
   color: blue;
   cursor: pointer;
+}
+
+.hideList{
+  display: none;
+}
+
+.showList{
+  margin: 4px;
+  color: green;
+}
+
+.choose-file label{
+  padding-right: 6px;
 }
