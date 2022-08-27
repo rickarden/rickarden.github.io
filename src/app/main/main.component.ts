@@ -13,6 +13,7 @@ export class MainComponent implements OnInit {
   shoppinglist: any[] = [];
   handlaMode: boolean = false;
   clickedItems: any[] = [];
+  showHelp: boolean = false;
 
   constructor(private router: Router) { }
 
@@ -49,7 +50,16 @@ export class MainComponent implements OnInit {
     this.toggleListForm(true);
   }
 
+  helpClicked(){
+    this.showHelp = true;
+    this.showList = false;
+    this.showSavedLists = false;
+    this.handlaMode = false;
+    this.clickedItems = [];
+  }
+
   toggleListForm(show: boolean){
+    this.showHelp = false;
     this.showList = show;
     this.showSavedLists = !show;
     this.handlaMode = false;
@@ -57,6 +67,7 @@ export class MainComponent implements OnInit {
   }
 
   handlaClickedHandler(){
+    this.showHelp = false;
     this.clickedItems = [];
     this.showList = false;
     this.showSavedLists = false;

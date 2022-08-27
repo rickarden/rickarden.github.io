@@ -1,7 +1,8 @@
 <div class="main">
   <nav class="navigation">
     <a class="button-link" (click)="goHome()">Hem</a> |
-    <a class="button-link" (click)="nyLista()">Ny lista</a>
+    <a class="button-link" (click)="nyLista()">Ny lista</a> |
+    <a class="button-link" (click)="helpClicked()">Hjälp</a>
   </nav>
 
   <div class="sparade-listor" [ngClass]="showSavedLists ? 'showList' : 'hideList'">Sparade listor
@@ -12,6 +13,6 @@
 
   <app-shoppinglist (handlaClicked)="handlaClickedHandler()" [ngClass]="showList ? 'displayList' : 'hideList'" [items]="shoppinglist"></app-shoppinglist>
   <app-shoppinglist-details [ngClass]="handlaMode ? 'showList' : 'hideList'" [clickedItems]="[]" [items]="shoppinglist"></app-shoppinglist-details>
-
+  <app-help [ngClass]="showHelp ? 'showList' : 'hideList'"></app-help>
 </div>
 
