@@ -8,6 +8,8 @@ import { ShoppinglistComponent } from './shoppinglist/shoppinglist.component';
 import { MainComponent } from './main/main.component';
 import { ShoppinglistDetailsComponent } from './shoppinglist-details/shoppinglist-details.component';
 import { HelpComponent } from './help/help.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbdAccordionBasicComponent } from './accordion-basic/accordion-basic.component';
 
 @NgModule({
   declarations: [
@@ -15,13 +17,15 @@ import { HelpComponent } from './help/help.component';
     ShoppinglistComponent,
     MainComponent,
     ShoppinglistDetailsComponent,
-    HelpComponent
+    HelpComponent,
+    NgbdAccordionBasicComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
